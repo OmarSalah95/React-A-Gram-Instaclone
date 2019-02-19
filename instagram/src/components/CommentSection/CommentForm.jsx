@@ -3,12 +3,18 @@ import './Comment.css';
 
 const CommentInput = props => {
   return (
-      <div className="comment-form">
-        <form>
-            <input type="text" placeholder="Add comment... " />
+      <>
+        <form className="comment-form" onSubmit={props.addComment}>
+            <input
+            type="text" 
+            placeholder="Add comment... "
+            value={props.commentInput}
+            name="commentInput"
+            onChange={props.handleChanges} 
+            />
+        <button type='submit' >Add Comment</button>
         </form>
-        <button>Add Comment</button>
-      </div>
+      </>
   );
 };
 
