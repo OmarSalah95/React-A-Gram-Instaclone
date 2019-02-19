@@ -2,6 +2,7 @@ import React from 'react';
 import Comment from './Comment';
 import CommentInput from './CommentForm';
 import PropTypes from 'prop-types';
+import './Comment.css';
 
 class CommentSection extends React.Component {
   constructor(props) {
@@ -25,7 +26,10 @@ class CommentSection extends React.Component {
 
 CommentSection.propTypes = {
   comments: PropTypes.arrayOf(
-    PropTypes.shape({ text: PropTypes.string, username: PropTypes.string })
+    PropTypes.shape({ 
+      text: PropTypes.string, 
+      username: PropTypes.string 
+    })
   )
 };
 

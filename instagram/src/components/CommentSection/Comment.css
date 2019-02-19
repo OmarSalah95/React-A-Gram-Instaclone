@@ -6,10 +6,20 @@
   
   .comment {
     font-weight: 300;
-    font-size: 14px;
+    font-size: 1rem;
   }
   
   .user {
     font-weight: 500;
-    font-size: 12px;
+    font-size: 1.1rem;
   }
+
+  .comment-form{
+    margin-top: 3%;
+    text-align: center;
+  }
+
+.time-stamp{
+    margin: 3%;
+    font-size: .6rem;
+}

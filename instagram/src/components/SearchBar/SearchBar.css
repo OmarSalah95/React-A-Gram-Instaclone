@@ -1,10 +1,9 @@
-.search-bar-wrapper {
-    border-bottom: 1px solid #3333;
+.search-bar {
+    border-bottom: 1px solid #61DAFB;
     height: 80px;
     line-height: 70px;
     display: flex;
     justify-content: space-between;
-    background: #ffffff;
   }
   
   .image-wrapper {
@@ -14,12 +13,26 @@
   .logo-image {
     height: 100%;
   }
-  
+
+  h1{
+    color: #61DAFB;
+  }
+
+  .search-bar input{
+    background: rgb(91, 91, 93);
+    color: #61DAFB;
+    font-size: 1.1rem;
+  }
   .social-wrapper {
     display: flex;
+    margin: 2% .5%;
   }
   
   .social {
     width: 20px;
     height: 20px;
+    margin:1%;
+    color: #61DAFB;
   }
+  
+  
