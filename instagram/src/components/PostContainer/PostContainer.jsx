@@ -24,6 +24,14 @@ const PostContainer = props => {
           src={props.post.imageUrl}
         />
       </div>
+      <div className="ui">
+        <div className="like">
+          <i className="fa fa-heart" />
+        </div>
+        <div className="comment">
+          <i className="fa fa-comment" />
+        </div>
+      </div>
         <CommentSection comments={props.post.comments} />
     </div>
   );

@@ -8,7 +8,7 @@ const Comment = props => {
     <div className="comment-text">
       <span className="user">@<strong>{props.comment.username}:</strong></span>{' '}
       <span className="comment">{props.comment.text}</span>
-      <span className="time-stamp">{moment().format('MM D YYYY, h:mm:ss a')}</span>
+      <span className="time-stamp">{moment().format('M/D/YYYY, h:mm:ss a')}</span>
     </div>
   );
 };

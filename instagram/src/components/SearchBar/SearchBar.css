@@ -25,7 +25,7 @@
   }
   .social-wrapper {
     display: flex;
-    margin: 2% .5%;
+    margin: 2% 0;
   }
   
   .social {

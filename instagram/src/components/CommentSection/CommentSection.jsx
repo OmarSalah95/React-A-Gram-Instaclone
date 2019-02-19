@@ -8,9 +8,11 @@ class CommentSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      comments: props.comments
+      comments: props.comments,
+      commentInput: ''
     };
   }
+
   render() {
     return (
       <div className='comment-section'>
