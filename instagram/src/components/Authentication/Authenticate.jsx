@@ -8,15 +8,20 @@ const Authenticate = App => LoginPage =>
         loggedIn: false
       };
     }
+
     componentDidMount() {
-      !localStorage.getItem('user') 
-        ? this.setState({ loggedIn: !this.state.loggedIn })
-        : null
+        if(localStorage.getItem('user')){ 
+            this.setState({ loggedIn: !this.state.loggedIn })
+        }
+        
     }
+
     render() {
-      this.state.loggedIn
-        ? <App />
-        : <LoginPage />
+      return (
+        this.state.loggedIn
+            ? <App />
+            : <LoginPage />
+        )
     }
   };
 
