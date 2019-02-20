@@ -42,7 +42,11 @@ handleChanges = e => {
         {this.state.comments.map((comment, index) => 
             <Comment key={index} comment={comment} />
         )}
-        <CommentInput addComment={this.addComment} commentInput={this.state.commentInput} handleChanges={this.handleChanges} />
+        <CommentInput 
+          addComment={this.addComment} 
+          commentInput={this.state.commentInput} 
+          handleChanges={this.handleChanges} 
+        />
       </div>
     );
   }
