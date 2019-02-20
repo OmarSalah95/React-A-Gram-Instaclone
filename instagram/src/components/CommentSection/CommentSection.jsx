@@ -30,6 +30,7 @@ class CommentSection extends React.Component {
     this.setState({
       comments: [...this.state.comments, newComment],
       commentInput: '',
+      commentCount: 0
     },
     
   );
@@ -37,7 +38,8 @@ class CommentSection extends React.Component {
 
 handleChanges = e => {
   this.setState({
-    [e.target.name]: e.target.value
+    [e.target.name]: e.target.value,
+    commentCount: this.state.comments.length
   });
 };
 

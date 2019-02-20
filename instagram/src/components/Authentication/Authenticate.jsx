@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 const Authenticate = App => LoginPage =>
-  class extends React.Component {
+  class extends Component {
     constructor(props) {
       super(props);
       this.state = {
@@ -10,10 +10,10 @@ const Authenticate = App => LoginPage =>
     }
 
     componentDidMount() {
+        // I tried having this be a ternary it broke the code, this is why I use es5 before deconstructing to es6
         if(localStorage.getItem('user')){ 
             this.setState({ loggedIn: !this.state.loggedIn })
         }
-        
     }
 
     render() {
