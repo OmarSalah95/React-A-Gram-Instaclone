@@ -30,7 +30,6 @@ class CommentSection extends React.Component {
     this.setState({
       comments: [...this.state.comments, newComment],
       commentInput: '',
-      commentCount: 0
     },
     
   );

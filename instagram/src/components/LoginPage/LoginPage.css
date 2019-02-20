@@ -1,0 +1,14 @@
+form{
+    text-align: center;
+    margin: 25% auto;
+    color: #61DAFB
+}
+
+form input{
+    margin: 2% auto;
+    height: 25px;
+}
+
+form button{
+    height: 45px;
+}
