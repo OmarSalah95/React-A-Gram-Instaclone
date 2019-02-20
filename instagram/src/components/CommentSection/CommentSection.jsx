@@ -22,7 +22,7 @@ class CommentSection extends React.Component {
     e.preventDefault();
 
     const newComment = {
-      username: Date.now(),
+      username: localStorage.getItem('user'),
       text: this.state.commentInput,
       timestamp: moment().format('M/D/YYYY, h:mm:ss a')
     }
