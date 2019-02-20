@@ -22,8 +22,6 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state.searchValue);
-    console.log(this.state.posts.filter(post => post.username.includes(this.state.searchValue))); 
     return (
       <>
         <SearchBar 

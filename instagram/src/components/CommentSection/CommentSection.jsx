@@ -9,9 +9,13 @@ class CommentSection extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      comments: props.comments,
+      comments: [],
       commentInput: ''
     };
+  }
+
+  componentDidMount() {
+    this.setState({ comments: this.props.comments });
   }
 
   addComment = e => {
@@ -27,6 +31,7 @@ class CommentSection extends React.Component {
       comments: [...this.state.comments, newComment],
       commentInput: '',
     },
+    
   );
 };
 
@@ -39,8 +44,8 @@ handleChanges = e => {
   render() {
     return (
       <div className='comment-section'>
-        {this.state.comments.map((comment, index) => 
-            <Comment key={index} comment={comment} />
+        {this.state.comments.map((comment) => 
+            <Comment key={comment.username + comment.timestamp} comment={comment} />
         )}
         <CommentInput 
           addComment={this.addComment} 
