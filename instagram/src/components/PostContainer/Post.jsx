@@ -18,6 +18,7 @@ class Post extends Component {
   incrementLike = () => {
     let likes = this.state.likes + 1;
     this.setState({ likes });
+    console.log(this.props.post.key);
 };
 
   render() {

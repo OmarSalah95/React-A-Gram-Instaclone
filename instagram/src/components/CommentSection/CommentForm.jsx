@@ -12,7 +12,7 @@ const CommentInput = props => {
             name="commentInput"
             onChange={props.handleChanges} 
             />
-        <button type='submit' >Add Comment</button>
+          <button type='submit' >Add Comment</button>
         </form>
       </>
   );

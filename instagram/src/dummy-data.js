@@ -17,12 +17,12 @@ const dummyData = [
       {
         username: "biancasaurus",
         text: "Looks delicious!",
-        timestamp: 'old'
+        timestamp: 'older'
       },
       {
         username: "martinseludo",
         text: "Can't wait to try it!",
-        timestamp: 'old'
+        timestamp: 'oldest'
       }
     ]
   },
@@ -43,22 +43,22 @@ const dummyData = [
       {
         username: "michaelmarzetta",
         text: "Omg that match was crazy",
-        timestamp: 'old'
+        timestamp: 'older'
       },
       {
         username: "themexican_leprechaun",
         text: "What a setup",
-        timestamp: 'old'
+        timestamp: 'older'
       },
       {
         username: "dennis_futbol",
         text: "It that injustice",
-        timestamp: 'old'
+        timestamp: 'older'
       },
       {
         username: "dennis_futbol",
         text: "Is",
-        timestamp: 'old'
+        timestamp: 'oldest'
       }
     ]
   },
@@ -79,12 +79,12 @@ const dummyData = [
       {
         username: "awaywetravel",
         text: "Yosemite is my most favorite place in the universe",
-        timestamp: 'old'
+        timestamp: 'older'
       },
       {
         username: "awesomebt28",
         text: "I like how Half Dome looks so old and useless",
-        timestamp: 'old'
+        timestamp: 'oldest'
       }
     ]
   },
