@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import dummyData from './dummy-data';
-import SearchBar from './components/SearchBar/SearchBar'
-import PostContainer from './components/PostContainer/PostContainer'
 import './App.css';
+import PostPage from './components/PostContainer/PostPage';
 
 class App extends Component {
   constructor() {
@@ -19,16 +18,15 @@ class App extends Component {
 
   searchPostsHandler = e => {
     this.setState({ searchValue:(e.target.value)});
+    console.log(this.state.searchValue);
   };
 
   render() {
     return (
       <>
-        <SearchBar 
+        <PostPage
           searchPosts={this.searchPostsHandler}
-        />
-        <PostContainer 
-          posts={this.state.posts.filter(post => post.username.includes(this.state.searchValue))} 
+          posts={this.state.posts} 
         />
       </>
     );
