@@ -1,14 +1,18 @@
-form{
+.login-form{
+    border-radius: 10px;
+    border: 1px solid #61DAFB;
+    background: rgb(13, 13, 14);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.2);
     text-align: center;
     margin: 25% auto;
     color: #61DAFB
 }
 
-form input{
+.login-form input{
     margin: 2% auto;
     height: 25px;
 }
 
-form button{
+.login-form button{
     height: 45px;
 }

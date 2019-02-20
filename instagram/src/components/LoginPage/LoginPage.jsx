@@ -27,8 +27,8 @@ class Login extends Component {
           searchPosts={this.searchPostsHandler}
         />
         <form className="login-form">
-          <h2>Welcome to ReactAgram</h2>
-          <h3>Please Login</h3>
+          <h1>Welcome to ReactAgram</h1>
+          <h2>Please Login</h2>
             <input
               type="text"
               placeholder="User Name"
