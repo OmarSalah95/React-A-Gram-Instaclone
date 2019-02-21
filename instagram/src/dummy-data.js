@@ -11,16 +11,18 @@ const dummyData = [
     comments: [
       {
         username: "philzcoffee",
-        text:
-          "We've got more than just delicious coffees to offer at our shops!"
+        text:"We've got more than just delicious coffees to offer at our shops!",
+        timestamp: 'old'
       },
       {
         username: "biancasaurus",
-        text: "Looks delicious!"
+        text: "Looks delicious!",
+        timestamp: 'older'
       },
       {
         username: "martinseludo",
-        text: "Can't wait to try it!"
+        text: "Can't wait to try it!",
+        timestamp: 'oldest'
       }
     ]
   },
@@ -35,23 +37,28 @@ const dummyData = [
     comments: [
       {
         username: "twitch",
-        text: "Epic Street Fighter action here in Las Vegas at #EVO2017!"
+        text: "Epic Street Fighter action here in Las Vegas at #EVO2017!",
+        timestamp: 'old'
       },
       {
         username: "michaelmarzetta",
-        text: "Omg that match was crazy"
+        text: "Omg that match was crazy",
+        timestamp: 'older'
       },
       {
         username: "themexican_leprechaun",
-        text: "What a setup"
+        text: "What a setup",
+        timestamp: 'older'
       },
       {
         username: "dennis_futbol",
-        text: "It that injustice"
+        text: "It that injustice",
+        timestamp: 'older'
       },
       {
         username: "dennis_futbol",
-        text: "Is"
+        text: "Is",
+        timestamp: 'oldest'
       }
     ]
   },
@@ -66,18 +73,21 @@ const dummyData = [
     comments: [
       {
         username: "playhearthstone",
-        text: "Love this shot!"
+        text: "Love this shot!",
+        timestamp: 'old'
       },
       {
         username: "awaywetravel",
-        text: "Yosemite is my most favorite place in the universe"
+        text: "Yosemite is my most favorite place in the universe",
+        timestamp: 'older'
       },
       {
         username: "awesomebt28",
-        text: "I like how Half Dome looks so old and useless"
+        text: "I like how Half Dome looks so old and useless",
+        timestamp: 'oldest'
       }
     ]
-  }
+  },
 ];
 
 export default dummyData;
