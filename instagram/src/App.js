@@ -1,6 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './App.css';
 import PostPage from './components/PostContainer/PostPage';
+import LoginPage from './components/LoginPage/LoginPage';
+import Authenticate from './components/Authentication/Authenticate';
 
 const App = () => {
     return (
@@ -10,4 +12,4 @@ const App = () => {
     );
 }
 
-export default App;
+export default Authenticate(App)(LoginPage);

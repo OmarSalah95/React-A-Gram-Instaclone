@@ -11,15 +11,22 @@ class Post extends Component {
     super(props);
     this.state = {
       likes: props.post.likes,
-      commentCount: 0
+      likeClicked: false
     };
   }
 
   incrementLike = () => {
-    let likes = this.state.likes + 1;
-    this.setState({ likes });
-    console.log(this.props.post.key);
-};
+    if(!this.state.likeClicked){
+      this.setState({ 
+        likes: this.state.likes - 1, 
+        likeClicked : !this.state.likeClicked 
+      })
+    }
+      this.setState({ 
+        likes: this.state.likes + 1, 
+        // likeClicked : !this.state.likeClicked 
+      });
+  }
 
   render() {
     return (

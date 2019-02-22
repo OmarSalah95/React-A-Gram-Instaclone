@@ -1,22 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 const Authenticate = App => LoginPage =>
-  class extends React.Component {
-    constructor(props) {
-      super(props);
+  class extends Component {
+    constructor() {
+      super();
       this.state = {
         loggedIn: false
       };
     }
+
     componentDidMount() {
-      !localStorage.getItem('user') 
-        ? this.setState({ loggedIn: !this.state.loggedIn })
-        : null
+        // I tried having this be a ternary it broke the code, this is why I use es5 before deconstructing to es6
+        if(localStorage.getItem('user')){ 
+            this.setState({ loggedIn: !this.state.loggedIn })
+        }
     }
+
     render() {
-      this.state.loggedIn
-        ? <App />
-        : <LoginPage />
+      return (
+        this.state.loggedIn
+            ? <App />
+            : <LoginPage />
+        )
     }
   };
 

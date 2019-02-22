@@ -22,7 +22,7 @@ class CommentSection extends React.Component {
     e.preventDefault();
 
     const newComment = {
-      username: Date.now(),
+      username: localStorage.getItem('user'),
       text: this.state.commentInput,
       timestamp: moment().format('M/D/YYYY, h:mm:ss a')
     }
@@ -37,7 +37,8 @@ class CommentSection extends React.Component {
 
 handleChanges = e => {
   this.setState({
-    [e.target.name]: e.target.value
+    [e.target.name]: e.target.value,
+    commentCount: this.state.comments.length
   });
 };
 
