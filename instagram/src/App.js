@@ -1,38 +1,13 @@
 import React, {Component} from 'react';
-import dummyData from './dummy-data';
-import SearchBar from './components/SearchBar/SearchBar'
-import PostContainer from './components/PostContainer/PostContainer'
 import './App.css';
+import PostPage from './components/PostContainer/PostPage';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      posts: [],
-      searchValue: ''
-    };
-  }
-
-  componentDidMount() {
-    this.setState({ posts: dummyData });
-  }
-
-  searchPostsHandler = e => {
-    this.setState({ searchValue:(e.target.value)});
-  };
-
-  render() {
+const App = () => {
     return (
       <>
-        <SearchBar 
-          searchPosts={this.searchPostsHandler}
-        />
-        <PostContainer 
-          posts={this.state.posts.filter(post => post.username.includes(this.state.searchValue))} 
-        />
+        <PostPage />
       </>
     );
-  }
 }
 
 export default App;
