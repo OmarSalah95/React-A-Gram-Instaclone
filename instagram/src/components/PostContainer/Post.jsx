@@ -22,10 +22,6 @@ class Post extends Component {
         likeClicked : !this.state.likeClicked 
       })
     }
-      this.setState({ 
-        likes: this.state.likes + 1, 
-        // likeClicked : !this.state.likeClicked 
-      });
   }
 
   render() {
@@ -35,9 +31,9 @@ class Post extends Component {
         <div className="post-header">
          <div className="post-thumb-wrapper">
           <img
-          alt="post header"
-           className="post-thumb"
-           src={this.props.post.thumbnailUrl}
+            alt="post header"
+            className="post-thumb"
+            src={this.props.post.thumbnailUrl}
            />
          </div>
          <h2>
